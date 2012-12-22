@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="form-wrapper">
+        <div class="errorMessage" ></div>
+        <div class="waiting">
+          <p>Please wait</p>
+          <img src="demo/images/loader.gif" title="Loader" alt="Loader" />
+        </div>
+    
+        <form class="form-signin" id="registration-form" method="post">
+          <h2 class="form-signin-heading">Registration Form</h2>
+          <input type="text" class="input-block-level" id="user_name" placeholder="Username">
+          <div class="taken"></div>
+          <div class="clear"></div>
+          <input type="text" class="input-block-level" id="email" placeholder="Email address">
+          <input type="password" class="input-block-level" id="password" placeholder="Password">
+          <div class="strength"><div class="bar"></div></div>
+          <div class="clear"></div>
+          <input type="password" class="input-block-level" id="repassword" placeholder="Re-enter Password">
+          <div class="clear"></div>
+          <button class="btn right" type="submit">Sign in</button>
+          <div class="clear"></div>
+        </form>
+        
+      </div> <!-- /form-wrapper -->
+    </div> <!-- /container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/application.js"></script>
+  </body>
+</html>

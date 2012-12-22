@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="form-wrapper">
+    
+        <form class="form-signin">
+          <h2 class="form-signin-heading">Please sign in</h2>
+          <input type="text" class="input-block-level" id="user_name" placeholder="Email address">
+          <input type="password" class="input-block-level" placeholder="Password">
+          <div class="clear"></div>
+          <label class="checkbox">
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+          <button class="btn right" type="submit">Sign in</button>
+        </form>
+
+      </div> <!-- /form-wrapper -->    
+    </div> <!-- /container -->
+  <script type="text/javascript">
+    function attempt_focus(){
+      setTimeout( function(){ try{
+        d = document.getElementById('user_name');
+        d.focus();
+        d.select();
+      } catch(e){}
+      }, 200);
+    }
+    attempt_focus();
+  </script>
+  </body>
+</html>
